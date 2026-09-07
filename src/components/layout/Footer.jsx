@@ -11,13 +11,13 @@ export const Footer = ({ onNavigate }) => {
           {/* Brand Manifesto Col */}
           <div className="md:col-span-6 flex flex-col justify-between">
             <div>
-              <div className="flex items-center gap-2.5 mb-6">
-                <div className="w-8 h-8 rounded-full bg-[#191817] flex items-center justify-center text-[#FAF8F5]">
-                  <span className="font-editorial text-sm font-bold tracking-tighter">S</span>
-                </div>
-                <span className="font-editorial text-2xl font-bold tracking-tight text-[#191817]">
-                  snaqary
-                </span>
+              <div className="flex items-center mb-6">
+                <img
+                  src="/images/logo.png"
+                  alt="Snaqary"
+                  className="h-12 sm:h-14 w-auto object-contain cursor-pointer"
+                  onClick={() => onNavigate('/')}
+                />
               </div>
               <p className="text-xl sm:text-2xl font-editorial font-medium leading-relaxed max-w-md text-[#191817]">
                 Better snacking, simply. Less palm oil, honest crunch, and familiar Indian flavours made modern.

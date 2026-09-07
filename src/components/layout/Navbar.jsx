@@ -59,14 +59,13 @@ export const Navbar = ({ currentPath, onNavigate }) => {
             {/* Left: Brand Logo */}
             <button
               onClick={() => handleLinkClick('/')}
-              className="group flex items-center gap-2.5 text-left focus:outline-none"
+              className="group flex items-center focus:outline-none"
             >
-              <div className="w-7 h-7 rounded-full bg-[#191817] flex items-center justify-center text-[#FAF8F5] transition-transform duration-300 group-hover:scale-105">
-                <span className="font-editorial text-xs font-bold tracking-tighter">S</span>
-              </div>
-              <span className="font-editorial text-lg tracking-tight font-bold text-[#191817]">
-                snaqary
-              </span>
+              <img
+                src="/images/logo.png"
+                alt="Snaqary"
+                className="h-8 sm:h-9 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              />
             </button>
 
             {/* Center: Desktop Navigation Links */}
